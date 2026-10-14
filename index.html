@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsroom AI - Thư viện nguồn</title>
+    <!-- Phông chữ Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Tách riêng -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <span class="logo-text">Newsroom <span>AI</span></span>
+            </div>
+
+            <nav class="nav-menu">
+                <div class="menu-section">
+                    <span class="menu-label">KHÔNG GIAN LÀM VIỆC</span>
+                    <ul>
+                        <li><a href="#" class="nav-item"><i class="fa-solid fa-border-all"></i> <span>Dashboard</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-solid fa-pen-nib"></i> <span>Trình soạn thảo</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Trợ lý AI</span></a></li>
+                        <li><a href="#" class="nav-item active"><i class="fa-regular fa-bookmark"></i> <span>Nguồn tin</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-regular fa-circle-check"></i> <span>Duyệt bài</span> <span class="badge">8</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-regular fa-paper-plane"></i> <span>Xuất bản</span> <span class="badge">4</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-solid fa-chart-line"></i> <span>Phân tích</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-regular fa-folder"></i> <span>Thư viện Media</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <span class="menu-label">HỆ THỐNG</span>
+                    <ul>
+                        <li><a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> <span>Cài đặt</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="user-profile">
+                <div class="avatar">LA</div>
+                <div class="user-info">
+                    <span class="user-name">Lan Anh</span>
+                    <span class="user-role">Phóng viên</span>
+                </div>
+                <button class="btn-logout" title="Đăng xuất"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <div class="breadcrumb">
+                        <span>Không gian làm việc</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <span class="current">Nguồn tin</span>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="search-bar-global">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" placeholder="Tìm kiếm bài viết, nguồn tin...">
+                        
+                    </div>
+
+                    <button class="btn-primary" id="btn-add-top">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Bài viết mới</span>
+                    </button>
+
+                    <div class="action-icons">
+                        <button class="icon-btn" id="theme-toggle" title="Đổi giao diện"><i class="fa-regular fa-moon"></i></button>
+                        <button class="icon-btn notification-btn" title="Thông báo">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="dot"></span>
+                        </button>
+                    </div>
+
+                    <div class="top-avatar">LA</div>
+                </div>
+            </header>
+
+            <!-- Page Body -->
+            <div class="content-body">
+                <!-- Page Title Block -->
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Thư viện nguồn</h1>
+                        <p class="page-subtitle">Nguồn tin được xác minh và chia sẻ trong toàn tòa soạn.</p>
+                    </div>
+                    <button class="btn-navy" id="btn-add-source">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Thêm nguồn</span>
+                    </button>
+                </div>
+
+                <!-- Stats Overview Grid -->
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="stat-total">328</div>
+                        <div class="stat-label">Tổng số nguồn</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="stat-verified">284</div>
+                        <div class="stat-label">Đã xác minh</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="stat-pending">18</div>
+                        <div class="stat-label">Chờ đánh giá</div>
+                    </div>
+                </section>
+
+                <!-- Filter and Search Controls -->
+                <div class="table-controls">
+                    <div class="search-input-wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="filter-search" placeholder="Tìm tên hoặc URL nguồn...">
+                    </div>
+
+                    <div class="filter-dropdowns">
+                        <select id="filter-type" class="custom-select">
+                            <option value="all">Tất cả loại</option>
+                            <option value="Cơ quan nhà nước">Cơ quan nhà nước</option>
+                            <option value="Tổ chức quốc tế">Tổ chức quốc tế</option>
+                            <option value="Báo chí chính thống">Báo chí chính thống</option>
+                            <option value="Viện nghiên cứu">Viện nghiên cứu</option>
+                        </select>
+
+                        <select id="filter-status" class="custom-select">
+                            <option value="all">Tất cả trạng thái</option>
+                            <option value="Hoạt động">Hoạt động</option>
+                            <option value="Tạm dừng">Tạm dừng</option>
+                            <option value="Chờ duyệt">Chờ duyệt</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Sources Data Table -->
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>TÊN NGUỒN</th>
+                                <th>URL</th>
+                                <th>LOẠI</th>
+                                <th>ĐỘ TIN CẬY</th>
+                                <th>LẦN DÙNG</th>
+                                <th>TRẠNG THÁI</th>
+                            </tr>
+                        </thead>
+                        <tbody id="source-table-body">
+                            <!-- Dynamic Content Rendered via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Form for Adding New Source -->
+    <div class="modal-overlay" id="add-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Thêm nguồn tin mới</h3>
+                <button class="btn-close" id="btn-close-modal">&times;</button>
+            </div>
+            <form id="add-source-form">
+                <div class="form-group">
+                    <label for="input-name">Tên nguồn tin <span class="required">*</span></label>
+                    <input type="text" id="input-name" required placeholder="VD: Tổng cục Thống kê">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-url">Đường dẫn URL <span class="required">*</span></label>
+                    <input type="text" id="input-url" required placeholder="VD: gso.gov.vn">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="input-type">Loại nguồn</label>
+                        <select id="input-type" class="custom-select">
+                            <option value="Cơ quan nhà nước">Cơ quan nhà nước</option>
+                            <option value="Tổ chức quốc tế">Tổ chức quốc tế</option>
+                            <option value="Báo chí chính thống">Báo chí chính thống</option>
+                            <option value="Viện nghiên cứu">Viện nghiên cứu</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-trust">Độ tin cậy</label>
+                        <select id="input-trust" class="custom-select">
+                            <option value="Cao">Cao</option>
+                            <option value="Trung bình">Trung bình</option>
+                            <option value="Thấp">Thấp</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" id="btn-cancel-modal">Hủy</button>
+                    <button type="submit" class="btn-navy">Lưu nguồn tin</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Tách riêng -->
+    <script src="js/main.js"></script>
+</body>
+</html>
