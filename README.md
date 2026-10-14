@@ -12,4 +12,4 @@
 - **Liên kết**:
   - Link Figma: https://www.figma.com/make/IUtJfbccJFCupAwPmCd52s/Web-Interface-for-Newsroom-AI?t=EHuEu5w2HaH4RVr7-20&fullscreen=1
   - Link Video: [Điền link Video Youtube 3 phút của bạn][cite: 3]
-  - Link GitHub: [Điền link Repository cá nhân][cite: 3]
+  - Link GitHub: https://github.com/20xMay/Newsroom-AI.git
