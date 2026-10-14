@@ -10,6 +10,6 @@
   - Chuyển đổi giao diện Sáng/Tối (Dark/Light mode).
 - **Công nghệ sử dụng**: HTML5 Semantic, CSS3 (Grid, Flexbox, Media Queries), JavaScript ES6 (DOM Manipulation).
 - **Liên kết**:
-  - Link Figma: [Điền link Figma của bạn][cite: 3]
+  - Link Figma: https://www.figma.com/make/IUtJfbccJFCupAwPmCd52s/Web-Interface-for-Newsroom-AI?t=EHuEu5w2HaH4RVr7-20&fullscreen=1
   - Link Video: [Điền link Video Youtube 3 phút của bạn][cite: 3]
   - Link GitHub: [Điền link Repository cá nhân][cite: 3]
